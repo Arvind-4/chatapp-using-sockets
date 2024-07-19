@@ -1,33 +1,42 @@
-# Chat-App-in-Python
+# Chatapp using sockets!
 
-Simple Chat Using Python
+Simple chatapp using Python, Socket connections.
 
-# How to Run this Locally
+## How to Run this Locally
 
-### Step 1: Check Version of Python
+- Step 1: Check Version of Python
 ```
 python -V
->>>Python 3.9.2
+>>>Python 3.10.13
 ```
 
-### Step 2: Clone Repository
+- Step 2: Clone Repository
 ```
-cd /path/to/folder
-mkdir src
-cd src
+cd ~/Dev
+mkdir ~/Dev/chatapp -p
+cd ~/Dev/chatapp
 git clone https://github.com/Arvind-4/Chat-App-in-Python.git .
 ```
 
-First Start the Server
+- Step 3: First Start the Server
 
-```
-python server.py
-```
-
-Open another Terminal in Same Path and Run the Client
-
-```
-python client.py
+```bash
+python src/server.py
 ```
 
-... and now Start Chatting
+- Step 4: Open another terminal in the same path and run the client. Open 'n' number of terminals to have 'N' clients. All the outputs will be displayed in the server terminal.
+
+```
+python src/client.py
+```
+
+... and now start chatting!!
+
+
+Format and Lint the code?
+Run
+
+```bash
+pip install -r requirements.txt
+ruff format . && ruff check .
+```
